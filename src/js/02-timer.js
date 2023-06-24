@@ -1,18 +1,18 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+// import Notiflix from 'notiflix';
 
-const inputDate = document.querySelector(input);
+const inputDate = document.querySelector('#datetime-picker');
 const btnStart = document.querySelector('button');
 
 console.log(inputDate);
 
 // const flatpickr = require('flatpickr');
-flatpickr(inputDate, options);
 
 inputDate.addEventListener('click', handleInputDateClick);
 
 function handleInputDateClick(evt) {
-  console.log(inputDate);
+  flatpickr(inputDate, options);
 }
 
 const options = {
@@ -21,6 +21,6 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    console.log(selectedDates[1]);
+    console.log(selectedDates[0]);
   },
 };
