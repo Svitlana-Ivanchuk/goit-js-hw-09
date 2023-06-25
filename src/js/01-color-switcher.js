@@ -16,7 +16,6 @@ function handleBtnStartClick(evt) {
   if (btnStart.toggleAttribute('disabled')) {
     btnStop.removeAttribute('disabled');
   }
-  console.log('click');
 }
 
 function hanleBtnStopClick(evt) {
