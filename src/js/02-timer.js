@@ -16,7 +16,7 @@ btnStart.addEventListener('click', () => {
   countdown.start();
 });
 
-const flatpickr = require('flatpickr');
+// const flatpickr = require('flatpickr');
 
 const options = {
   enableTime: true,
