@@ -34,7 +34,7 @@ const options = {
   },
 };
 
-const fp = flatpickr(inputDate, options);
+flatpickr(inputDate, options);
 
 const countdown = {
   intervalId: null,
